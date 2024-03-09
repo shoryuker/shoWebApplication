@@ -1,2 +1,1 @@
-# shoWebApplication
-Web application for "shoryuker".
+# shoryuker's Web Application
