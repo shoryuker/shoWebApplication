@@ -81,6 +81,8 @@ DATABASES = {
         'NAME': 'testing',
         'USER': 'Teague',
         'PASSWORD': 'password',
+        'HOST': 'localhost',  # Replace with your PostgreSQL server's address when necessary
+        'PORT': '',          # Leave empty to use the default PostgreSQL port (usually 5432)
     }
 }
 
