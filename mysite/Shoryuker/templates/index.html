@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Details</title>
+</head>
+<body>
+    <h1>Game Details</h1>
+
+    <h2>Game Type</h2>
+    <ul>
+        <li>Casual</li>
+        <li>Ranked</li>
+        <li>Tournament</li>
+    </ul>
+
+    <h2>Set Type</h2>
+    <ul>
+        <li>First to <span id="ftInput"></span> - Example: FT[UserInput] = FT5</li>
+        <li>Best of <span id="boInput"></span> - Example: BO[UserInput] = BO3</li>
+        <li>Continuous Sets</li>
+    </ul>
+
+    <h2>End Score</h2>
+    <ul id="endScore">
+        <!-- Scores will be dynamically added here -->
+    </ul>
+
+    <h2>Date Played</h2>
+    <p id="datePlayed">[Date Played]</p>
+
+    <h2>Entry Name (Optional)</h2>
+    <p id="entryName">[Entry Name]</p>
+
+    <h2>VOD Link (Optional)</h2>
+    <p id="vodLink">[VOD Link]</p>
+
+    <h2>Character(s) Played</h2>
+    <ul id="charactersPlayed">
+        <!-- Characters will be dynamically added here -->
+    </ul>
+
+    <h2>Miscellaneous Content</h2>
+    <p id="miscContent">[Miscellaneous Content]</p>
+
+    <script>
+        // JavaScript to populate dynamic fields
+        document.getElementById('ftInput').innerText = '<UserInput>';
+        document.getElementById('boInput').innerText = '<UserInput>';
+        document.getElementById('endScore').innerHTML = '<li>Round W/L Count (If Game Type is Ranked or Casual) - Example: [W/L/D], [W/L/D], [W/L/D] = W, L, W</li><li>Placement (If Game Type is Tournament) - Example: [userInput] out of [userInput] = 3rd out of 10</li>';
+        document.getElementById('datePlayed').innerText = '[UserInput]';
+        document.getElementById('entryName').innerText = '[UserInput]';
+        document.getElementById('vodLink').innerText = '[UserInput]';
+        document.getElementById('charactersPlayed').innerHTML = '<li>[Character 1]</li><li>[Character 2]</li>'; // Add more <li> for additional characters
+        document.getElementById('miscContent').innerText = '[Miscellaneous Content]';
+    </script>
+</body>
+</html>
