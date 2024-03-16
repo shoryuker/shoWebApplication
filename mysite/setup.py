@@ -47,6 +47,6 @@ if __name__ == "__main__":
     install_dependencies()
     install_requirements()
     initialize_db()
-    # create_db() - This function should not be needed pending review from wider team, this seems to function whether or not this is ran as long as initialize_db() is ran
+    create_db()
     run_webserver()
     
