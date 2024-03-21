@@ -1,2 +1,2 @@
 # shoryuker's Web Application
-A simple fighting games web application. FUN
+A simple fighting games web application. FUN DAY!
